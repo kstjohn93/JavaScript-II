@@ -106,7 +106,7 @@ runners.map(function(name){
 })
 console.log(updatedNames);
 // Problem 3
-Using filter create a new array with iformation of people with the shirt size S 
+//Using filter create a new array with iformation of people with the shirt size S 
 
 let smallShirt =[];
 runners.filter(function(size){
