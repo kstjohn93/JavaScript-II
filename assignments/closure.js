@@ -1,6 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function whatsUp(greeting){
+  let yourGreeting=greeting;
+  let name="Mr.Bond";
+  console.log(`${yourGreeting}.How are you?`);
+   function answer(){
+     let myAnswer="I'm good.Thanks";
+     console.log(`${yourGreeting} ${name} ${myAnswer}`)
+   }
+   answer();
+}
 
+console.log (whatsUp('Yo'))
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
