@@ -56,8 +56,8 @@ const runners = [{"id":1,"first_name":"Charmain","last_name":"Seiler","email":"c
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs.  Combine both the first and last names into a new array called fullName. 
 let fullName = [];
-runners.forEach(function(item){
-  fullName.push(item.first_name , item.last_name)
+runners.forEach(function(run) {
+	fullName.push(`${run.first_name} ${run.last_name}`);
 });
 console.log(fullName);
 
@@ -93,12 +93,11 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
-let eMail=[];
-runners.forEach(function(item){
-    eMail.push(item.first_name,item.email);
-})
-
-console.log(eMail);
+let runnersEmail = runners.map(
+    runner => `${runner.first_name}: ${runner.email}`
+  );
+  
+  console.log(runnersEmail);
 // Problem 2
 let updatedNames=[];
 runners.map(function(name){
